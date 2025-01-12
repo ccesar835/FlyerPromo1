@@ -19,13 +19,15 @@
       justify-content: center;
       min-height: 100vh;
       background-size: cover;
-      background-position: center
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
     /* Container do flyer */
     .flyer-container {
-      width: 90%;
-      height: 1080px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
       padding: 20px;
       text-align: center;
       font-size: 4.5rem;
@@ -71,26 +73,29 @@
 
     /* Media queries para responsividade */
     @media (max-width: 768px) {
-      .flyer-container {
-        width: 95%;
-        padding: 10px;
-      }
+  .flyer-title {
+    font-size: 3rem; /* Reduz título */
+  }
+  .subtitle {
+    font-size: 2rem; /* Ajusta subtítulo */
+  }
+  .details {
+    font-size: 1.5rem; /* Ajusta detalhes */
+  }
+}
 
-      .flyer-title {
-        font-size: 1.5em;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .flyer-container {
-        width: 100%;
-        padding: 5px;
-      }
-
-      .flyer-title {
-        font-size: 1.2em;
-      }
-    }
+@media (max-width: 480px) {
+  .flyer-title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .details {
+    font-size: 1.2rem;
+  }
+}
+    
   </style>
 </head>
 <body>
