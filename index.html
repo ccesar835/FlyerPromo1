@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Promoção - CeC Artesanal Food</title>
   <style>
-    /* Configurações gerais */
+    
     body {
       margin: 10px;
       padding: 10px;
@@ -23,45 +23,35 @@
       background-repeat: no-repeat;
     }
 
-    /* Container do flyer */
     .flyer-container {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      padding: 20px;
-      text-align: center;
-      font-size: 4.5rem;
-      background-color: #fff
-      background-position: center;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-      color: #C51515;
-    }
-
-    /* Título */
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 4vw; 
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  color: #C51515;
+}
+    
     .flyer-title {
-      font-size: 8.0rem;
-      color: #c51515; 
-      margin-bottom: 20px;
-    }
+  font-size: 6vw; 
+  margin-bottom: 10px;
+}
 
-    /* Subtítulo */
-    .subtitle {
-      font-size: 3.0rem;
-      font-weight: bold;
-      color: #ff5733;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-      margin-bottom: 20px;
-    }
+.subtitle {
+  font-size: 4vw;
+  margin-bottom: 10px;
+}
 
-    /* Detalhes */
-    .details {
-      margin-top: 100px;
-      font-size: 3.0rem;
-      color: #fff;
-      line-height: 1.8;
-    }
-
+.details {
+  font-size: 3vw;
+  line-height: 1.4;
+}
     .details a {
       color: hsl(84, 80.5%, 44.3%);
       text-decoration: underline;
@@ -73,26 +63,41 @@
 
     /* Media queries para responsividade */
     @media (max-width: 768px) {
+  .flyer-container {
+    padding: 10px;
+    max-width: 90%;
+    max-height: 80vh;
+  }
+
   .flyer-title {
-    font-size: 3rem; /* Reduz título */
+    font-size: 5vw;
   }
+
   .subtitle {
-    font-size: 2rem; /* Ajusta subtítulo */
+    font-size: 3.5vw;
   }
+
   .details {
-    font-size: 1.5rem; /* Ajusta detalhes */
+    font-size: 2.5vw;
   }
 }
 
 @media (max-width: 480px) {
+  .flyer-container {
+    padding: 5px;
+    max-height: 75vh;
+  }
+
   .flyer-title {
-    font-size: 2rem;
+    font-size: 4vw;
   }
+
   .subtitle {
-    font-size: 1.5rem;
+    font-size: 3vw;
   }
+
   .details {
-    font-size: 1.2rem;
+    font-size: 2vw;
   }
 }
     
